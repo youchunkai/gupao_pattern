@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,7 +62,7 @@ public class GPProxy {
         } catch (Exception e) {
 
         }
-
+        Proxy.newProxyInstance(null, null, null);
         return null;
     }
 
